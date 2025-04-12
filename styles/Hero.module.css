@@ -1,0 +1,45 @@
+/* components/Hero.module.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #282c34; /* Background color */
+  color: white; /* Text color */
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.logo img {
+  height: 50px; /* Adjust logo size */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburgerIcon {
+  height: 24px; /* Adjust size of hamburger icon */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.welcome {
+  margin-top: 20px; /* Space between header and welcome text */
+}
+
+.welcome h1 {
+  font-size: 2.5rem; /* Adjust font size */
+}
+
+.welcome h2 {
+  font-size: 1.5rem; /* Adjust font size */
+}
