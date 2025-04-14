@@ -1,0 +1,30 @@
+
+.resume {
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items at the start */
+  padding: 20px;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.nav {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-right: 20px; /* Space between nav and rectangle */
+}
+
+.navButton {
+  padding: 10px;
+  background-color: #0070f3; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 10px; /* Space between buttons */
+}
+
+.navButton:hover {
+  background-color: #005bb5; /* Darker button color on hover */
+}
+
+  

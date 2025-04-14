@@ -1,0 +1,47 @@
+/* components/AboutMe.module.css */
+.aboutMe {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Padding around the section */
+  }
+  
+  .title {
+    font-size: 2rem; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .content {
+    display: flex; /* Use flexbox for content layout */
+    justify-content: space-between; /* Space out text and image */
+    width: 100%; /* Full width */
+  }
+  
+  .textContainer {
+    flex: 1; /* Allow text container to grow */
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  .imageContainer {
+    flex: 1; /* Allow image container to grow */
+    display: flex; /* Use flexbox for image and icons */
+    flex-direction: column; /* Stack image and icons vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .profileImage {
+    border-radius: 15px; /* Rounded corners for the profile image */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .socialIcons {
+    display: flex; /* Use flexbox for icon layout */
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 10px; /* Space above icons */
+  }
+  
+  .socialIcons a {
+    margin: 0 10px; /* Space between icons */
+  }
+  

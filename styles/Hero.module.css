@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full viewport height */
-  background-color: #282c34; /* Background color */
+  background-color: #6E6E6E; /* Background color */
   color: white; /* Text color */
   text-align: center;
 }
@@ -15,6 +15,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 20px;
+  background-color: #6C7214;
   position: relative;
 }
 
@@ -38,8 +39,21 @@
 
 .welcome h1 {
   font-size: 2.5rem; /* Adjust font size */
+  font-family: 'Rockwell', serif; /* Use Rockwell font */
+  font-weight: bold; /* Make text bold */
 }
 
 .welcome h2 {
   font-size: 1.5rem; /* Adjust font size */
+  font-family: 'Rockwell', serif; /* Use Rockwell font */
+  font-weight: bold; /* Make text bold */
 }
+
+.toolset {
+  margin-top: 20px; /* Space between welcome text and tool set image */
+}
+
+.toolset img {
+  /* Optional: Add any additional styles for the tool set image */
+}
+

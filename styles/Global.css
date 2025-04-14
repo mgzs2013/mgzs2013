@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Rockwell';
+    src: url('/fonts/Rockwell-Regular.ttf') format('truetype'); /* Adjust the path as necessary */
+    font-weight: normal;
+  }

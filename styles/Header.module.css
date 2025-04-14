@@ -1,0 +1,52 @@
+/* components/Header.module.css */
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+  padding: 45px 25px; /* Padding around the header */
+  background-color: #6C7214; /* Background color */
+  border: 1px solid #6C7214;
+  color: white; /* Text color */
+}
+
+.nav ul {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Use flexbox for navigation */
+  gap: 20px; /* Space between nav items */
+}
+
+.menu {
+  position: relative; /* Position relative for dropdown */
+}
+
+.dropdownMenu {
+  position: absolute; /* Position dropdown relative to the menu */
+  top: 40px; /* Adjust based on header height */
+  right: 0; /* Align to the right */
+  background-color: #282c34; /* Background color for dropdown */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  z-index: 1000; /* Ensure dropdown appears above other content */
+}
+
+.dropdownMenu ul {
+  list-style: none; /* Remove default list styles */
+  padding: 10px; /* Padding around the dropdown */
+}
+
+.dropdownMenu li {
+  margin: 5px 0; /* Space between items */
+}
+
+.dropdownMenu a {
+  color: white; /* Text color for links */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the whole area clickable */
+  padding: 10px; /* Add padding for clickable area */
+}
+
+.dropdownMenu a:hover {
+  background-color: #005bb5; /* Highlight on hover */
+}
+
+
