@@ -4,56 +4,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
+  height: 35vh; /* Full viewport height */
   background-color: #6E6E6E; /* Background color */
   color: white; /* Text color */
   text-align: center;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px;
-  background-color: #6C7214;
-  position: relative;
-}
-
-.logo img {
-  height: 50px; /* Adjust logo size */
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.hamburgerIcon {
-  height: 24px; /* Adjust size of hamburger icon */
-  cursor: pointer; /* Change cursor to pointer */
+ 
 }
 
 .welcome {
-  margin-top: 20px; /* Space between header and welcome text */
+  margin-top: 0;
 }
 
 .welcome h1 {
-  font-size: 2.5rem; /* Adjust font size */
-  font-family: 'Rockwell', serif; /* Use Rockwell font */
-  font-weight: bold; /* Make text bold */
-}
-
-.welcome h2 {
   font-size: 1.5rem; /* Adjust font size */
   font-family: 'Rockwell', serif; /* Use Rockwell font */
   font-weight: bold; /* Make text bold */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.welcome h2 {
+  font-size: 1.3rem; /* Adjust font size */
+  font-family: 'Rockwell', serif; /* Use Rockwell font */
+  font-weight: bold; /* Make text bold */
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .toolset {
-  margin-top: 20px; /* Space between welcome text and tool set image */
-}
-
-.toolset img {
-  /* Optional: Add any additional styles for the tool set image */
+  margin-top: 10px; /* Adjust this value to control space above the toolset */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the toolset horizontally */
+  width: 100%; /* Full width to allow centering */
+ 
 }
 

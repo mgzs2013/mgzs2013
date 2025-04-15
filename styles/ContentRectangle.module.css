@@ -1,8 +1,9 @@
 /* components/ContentRectangle.module.css */
 .rectangle {
-  width: 300px; /* Width of the main rectangle */
-  max-height: 80vh; /* Set a maximum height to prevent it from taking too much space */
-  background-color: #f4f4f4; /* Background color */
+  width: 100%; /* Full width of the parent */
+  max-width: 290px; /* Set a maximum width */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #6E6E6E; /* Background color */
   padding: 20px; /* Padding inside the rectangle */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   overflow-y: auto; /* Allow vertical scrolling */
@@ -17,18 +18,20 @@
 }
 .smallRectangle {
   background-color: #e0e0e0; /* Color of the small rectangles */
-  flex: 1; /* Allow rectangles to grow equally */
+  flex: 2; /* Allow rectangles to grow equally */
   margin-bottom: 10px; /* Space between rectangles */
   display: flex; /* Center text inside */
   align-items: center; /* Center text vertically */
   justify-content: center; /* Center text horizontally */
   border: 1px solid #ccc; /* Optional border */
+  min-height: 80px; /* Set a minimum height for small rectangles */
 }
 .footerText {
   text-align: center; /* Center the footer text */
   margin-top: 10px; /* Space above footer text */
-  font-size: 14px; /* Font size for footer text */
-  color: #666; /* Color for footer text */
+  font-size: 5px; /* Font size for footer text */
+  color: white;
+  
 }
 
   

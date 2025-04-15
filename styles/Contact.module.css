@@ -1,31 +1,39 @@
 /* components/Contact.module.css */
 .contact {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 20px; /* Padding around the section */
-    height: 100vh; /* Full viewport height */
-    background-color: #ffffff; /* Background color */
-  }
-  
-  .contact h2 {
-    font-size: 2rem; /* Title font size */
-    margin-bottom: 20px; /* Space below title */
-  }
-  
-  .contactInfo {
-    display: flex; /* Use flexbox for item layout */
-    flex-direction: column; /* Stack items vertically */
-  }
-  
-  .contactItem {
-    display: flex; /* Use flexbox for icon and text */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 15px; /* Space between items */
-  }
-  
-  .contactItem span {
-    margin-left: 10px; /* Space between icon and text */
-    font-size: 1.2rem; /* Font size for contact info */
-  }
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding: 20px; /* Padding around the section */
+  height: 30vh; /* Full viewport height */
+  background-color: #6C7214; /* Background color */
+}
+
+.contact h2 {
+  font-size: 1.3rem; /* Title font size */
+  margin: 0; /* Remove margin */
+  margin-bottom: 20px; /* Space below title */
+  font-family: 'Rockwell', serif; /* Use Rockwell font */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center the text */
+  width: 100%; /* Optional: make the width 100% to ensure centering */
+}
+
+.contactInfo {
+  display: flex; /* Use flexbox for item layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Keep items aligned to the left */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.contactItem {
+  display: flex; /* Use flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 15px; /* Space between items */
+}
+
+.contactItem span {
+  margin-left: 10px; /* Space between icon and text */
+  font-size: .8rem; /* Font size for contact info */
+}
+
   

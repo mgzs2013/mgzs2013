@@ -1,7 +1,7 @@
 // components/Hero.tsx
 import Image from 'next/image'; // Import the Image component
 import styles from '../styles/Hero.module.css'; // Import styles for the Hero component
-import AboutMe from './AboutMe'; // Import the AboutMe component
+
 
 const Hero: React.FC = () => {
   return (
@@ -13,12 +13,12 @@ const Hero: React.FC = () => {
           <Image 
             src="/tool-kit.png" // Path to your tool set PNG
             alt="Tool Set" 
-            width={150} // Set the width of the tool set image
-            height={75} // Set the height of the tool set image
+            width={70} // Set the width of the tool set image
+            height={35} // Set the height of the tool set image
           />
         </div>
       </div>
-      <AboutMe /> {/* Add the AboutMe component here */}
+
     </section>
   );
 };

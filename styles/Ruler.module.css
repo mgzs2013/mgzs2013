@@ -1,0 +1,11 @@
+/* components/Graphic.module.css */
+.graphicContainer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: end; /* Center the graphic horizontally */
+    
+    width: 100%; /* Full width */
+    padding-top: 20px;
+    padding-right: 30px;
+    background-color: white;
+  }
+  

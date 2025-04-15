@@ -9,28 +9,28 @@ const Contact: React.FC = () => {
       <div className={styles.contactInfo}>
         <div className={styles.contactItem}>
           <Image 
-            src="/path/to/phone-icon.png" // Replace with your actual phone icon path
+            src="/Phone.svg" // Replace with your actual phone icon path
             alt="Phone"
-            width={24} // Adjust icon size as needed
-            height={24}
+            width={15} // Adjust icon size as needed
+            height={15}
           />
           <span>(510) 388-8444</span>
         </div>
         <div className={styles.contactItem}>
           <Image 
-            src="/path/to/email-icon.png" // Replace with your actual email icon path
+            src="/baseline-email.svg" // Replace with your actual email icon path
             alt="Email"
-            width={24} // Adjust icon size as needed
-            height={24}
+            width={15} // Adjust icon size as needed
+            height={15}
           />
           <span>mariog.2822@gmail.com</span>
         </div>
         <div className={styles.contactItem}>
           <Image 
-            src="/path/to/location-icon.png" // Replace with your actual location icon path
+            src="/location-filled.svg" // Replace with your actual location icon path
             alt="Location"
-            width={24} // Adjust icon size as needed
-            height={24}
+            width={15} // Adjust icon size as needed
+            height={15}
           />
           <span>San Francisco, Bay Area</span>
         </div>
