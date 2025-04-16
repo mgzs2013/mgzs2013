@@ -11,6 +11,7 @@ const Resume: React.FC = () => {
   const [currentContent, setCurrentContent] = useState('');
   const [contentType, setContentType] = useState(''); // State for content type
   const [showSmallRectangles, setShowSmallRectangles] = useState(true); // Control visibility of small rectangles
+  const [activeButton, setActiveButton] = useState<string | null>(null); // Track active button
 
   const handleLinkClick = (content: string) => {
     switch (content) {
@@ -18,39 +19,49 @@ const Resume: React.FC = () => {
         setCurrentContent('');
         setContentType(''); // Set content type to paragraph
         setShowSmallRectangles(true); // Show small rectangles for Job 1
+        setActiveButton('Check out my projects'); // Set active button
         break;
       case 'Details about Job 2':
         setCurrentContent('Frontend technologies: React.Js Angular JQuery Typescript Tailwind CSS Bootstrap Node.Js Python, Backend technologies: GoLang Gin C# .NET Framework Prisma Zod, Database Management: PostgreSQL SQLite MongoDB Superbase'); // Example technologies as a comma-separated string
         setContentType('list'); // Set content type to list
         setShowSmallRectangles(false); // Show small rectangles for Job 2
+        setActiveButton('Details about Job 2'); // Set active button
         break;
       case 'Details about Education':
         setCurrentContent('I graduated from XYZ University with a degree in Computer Science.'); // Example content
         setContentType('paragraph'); // Set content type to paragraph
         setShowSmallRectangles(false); // Do not show small rectangles for Education
+        setActiveButton('Details about Education'); // Set active button
         break;
       default:
         setCurrentContent('Click a link to see content.');
         setContentType(''); // Reset content type
         setShowSmallRectangles(true); // Default to showing small rectangles
+        setActiveButton(null); // Reset active button
     }
   };
 
   return (
     <section className={styles.resume}>
     <nav className={styles.nav}>
+    {activeButton !== 'Check out my projects' && (
       <button onClick={() => handleLinkClick('Check out my projects')} className={styles.navButton}>
       <Image src="/Arrow.svg" alt="Arrow" width={22} height={22} /> 
         Check out my projects:
       </button>
+    )}
+    {activeButton !== 'Details about Job 2' && (
       <button onClick={() => handleLinkClick('Details about Job 2')} className={styles.navButton}>
       <Image src="/Arrow.svg" alt="Arrow" width={22} height={22} /> 
         My tech stack:
       </button>
+    )}
+    {activeButton !== 'Details about Education' && (
       <button onClick={() => handleLinkClick('Details about Education')} className={styles.navButton}>
       <Image src="/Arrow.svg" alt="Arrow" width={22} height={22} /> 
         Passion for team:
       </button>
+    )}
     </nav>
     <ContentRectangle content={currentContent} contentType={contentType} showSmallRectangles={showSmallRectangles} /> {/* This remains in the layout */}
   </section>

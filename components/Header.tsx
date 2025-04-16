@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           onClick={toggleDropdown} // Toggle dropdown on click
         />
         {isDropdownOpen && ( // Render dropdown menu if it's open
-          <nav className={styles.dropdownMenu}>
+          <nav className={`${styles.dropdownMenu} ${isDropdownOpen ? styles.open : ''}`}>
             <ul>
               <li><a href="#hero" onClick={toggleDropdown}>Home</a></li>
               <li><a href="#resume" onClick={toggleDropdown}>Resume</a></li>
