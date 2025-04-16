@@ -27,15 +27,25 @@
   min-height: 80px; /* Set a minimum height for small rectangles */
 }
 .footerText {
-  text-align: center; /* Center the footer text */
-  margin-top: 10px; /* Space above footer text */
-  font-size: 5px; /* Font size for footer text */
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 10px; /* Font size for footer text */
+  font-weight: bold;
   color: white;
   
 }
 
 .techList {
   text-align: center;
+}
+
+.githubLink {
+
+  margin-left: 5px; /* Space between text and icon */
+  display: inline-flex; /* Ensure the link behaves like an inline element */
+  align-items: center; /* Center the icon vertically */
 }
 
   
