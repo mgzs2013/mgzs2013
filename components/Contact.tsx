@@ -1,6 +1,6 @@
 // components/Contact.tsx
-import Image from 'next/image'; // Import the Image component
-import styles from '../styles/Contact.module.css'; // Import CSS module for styling
+import Image from "next/image"; // Import the Image component
+import styles from "../styles/Contact.module.css"; // Import CSS module for styling
 
 const Contact: React.FC = () => {
   return (
@@ -8,16 +8,18 @@ const Contact: React.FC = () => {
       <h2>Let&apos;s connect:</h2>
       <div className={styles.contactInfo}>
         <div className={styles.contactItem}>
-          <Image 
+          <Image
             src="/PhoneEmoji.svg" // Replace with your actual phone icon path
             alt="Phone"
             width={15} // Adjust icon size as needed
             height={15}
           />
-          <span>(510) 388-8444</span>
+          <a href="tel:5103888444" className={styles.contactLink}>
+            <span>(510) 388-8444</span>
+          </a>
         </div>
         <div className={styles.contactItem}>
-          <Image 
+          <Image
             src="/MailEmoji.svg" // Replace with your actual email icon path
             alt="Email"
             width={15} // Adjust icon size as needed
@@ -26,7 +28,7 @@ const Contact: React.FC = () => {
           <span>mariog.2822@gmail.com</span>
         </div>
         <div className={styles.contactItem}>
-          <Image 
+          <Image
             src="/LocationEmoji.svg" // Replace with your actual location icon path
             alt="Location"
             width={15} // Adjust icon size as needed
@@ -43,4 +45,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-

@@ -1,13 +1,31 @@
 /* components/Header.module.css */
 .header {
   display: flex; /* Use flexbox for layout */
+  
   justify-content: space-between; /* Space between logo and nav */
   align-items: center; /* Center items vertically */
-  padding: 45px 25px; /* Padding around the header */
+  padding: 35px 15px; /* Padding around the header */
   background-color: #6C7214; /* Background color */
-  border: 1px solid #6C7214;
   color: white; /* Text color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it stays above other content */
+
 }
+
+.hamburgerIcon {
+  cursor: pointer; /* Change cursor on hover */
+  transition: transform 0.3s ease; /* Smooth transition for icon */
+  transform: translateX(-10px); /* Move the icon to the left */
+}
+
+.hamburgerIcon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
 
 .nav ul {
   list-style: none; /* Remove default list styles */
@@ -63,6 +81,10 @@
 .dropdownMenu a:hover {
   background-color: #6E6E6E; /* Highlight on hover */
   border-radius: 5px; /* Rounded corners on hover */
+}
+
+.logo {
+  margin-left: 17px;
 }
 
 
