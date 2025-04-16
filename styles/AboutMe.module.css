@@ -46,12 +46,14 @@
     height: auto; /* Maintain aspect ratio */
     border-radius: 1px;
     border-color: black;
+    margin-left: 10px;
   }
   
   .socialIcons {
     display: flex; /* Use flexbox for icon layout */
     justify-content: center; /* Center icons horizontally */
     margin-top: 10px; /* Space above icons */
+    margin-left: 10px;
   }
   
   .socialIcons a {
