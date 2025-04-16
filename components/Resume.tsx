@@ -46,19 +46,19 @@ const Resume: React.FC = () => {
     <nav className={styles.nav}>
     {activeButton !== 'Check out my projects' && (
       <button onClick={() => handleLinkClick('Check out my projects')} className={styles.navButton}>
-      <Image src="/Arrow.svg" alt="Arrow" width={22} height={22} /> 
+      <Image src="/Arrow.svg" alt="Arrow" width={23} height={23} /> 
         Check out my projects:
       </button>
     )}
     {activeButton !== 'Details about Job 2' && (
       <button onClick={() => handleLinkClick('Details about Job 2')} className={styles.navButton}>
-      <Image src="/Arrow.svg" alt="Arrow" width={22} height={22} /> 
+      <Image src="/Arrow.svg" alt="Arrow" width={23} height={23} /> 
         My tech stack:
       </button>
     )}
     {activeButton !== 'Details about Education' && (
       <button onClick={() => handleLinkClick('Details about Education')} className={styles.navButton}>
-      <Image src="/Arrow.svg" alt="Arrow" width={22} height={22} /> 
+      <Image src="/Arrow.svg" alt="Arrow" width={23} height={23} /> 
         Passion for team:
       </button>
     )}

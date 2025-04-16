@@ -21,7 +21,7 @@
   display: flex; /* Use flexbox for button layout */
   align-items: center; /* Center items vertically */
   line-height: 2.5; /* Increase line-height to move text down */
-  padding: 15px, 17px;
+  padding: 15px, 15px;
   background-color: white; /* Button color */
   color: #6E6E6E; /* Text color */
   border: none; /* Remove border */
@@ -35,7 +35,8 @@
 }
 
 .navButton:hover {
-  background-color: #005bb5; /* Darker button color on hover */
+  background-color: #6E6E6E; /* Darker button color on hover */
+  color: white;
 }
 .navButton img {
   margin-right: 10px; /* Space between icon and text */

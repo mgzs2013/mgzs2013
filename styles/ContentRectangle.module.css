@@ -1,10 +1,10 @@
 /* components/ContentRectangle.module.css */
 .rectangle {
   width: 100%; /* Full width of the parent */
-  max-width: 290px; /* Set a maximum width */
+  max-width: 345px; /* Set a maximum width */
   height: auto; /* Allow height to adjust based on content */
   background-color: #6E6E6E; /* Background color */
-  padding: 20px; /* Padding inside the rectangle */
+  padding: 30px; /* Padding inside the rectangle */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   overflow-y: auto; /* Allow vertical scrolling */
   display: flex; /* Use flexbox for layout */

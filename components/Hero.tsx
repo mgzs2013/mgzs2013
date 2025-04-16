@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     <section className={styles.hero}>
       <div className={styles.welcome}>
         <h1>Hello and welcome!</h1>
-        <h2>I am a Full-Stack Engineer.</h2>
+        <h2>It&apos;s me, Mario.</h2>
         <div className={styles.toolset}>
           <Image 
             src="/tool-kit.png" // Path to your tool set PNG

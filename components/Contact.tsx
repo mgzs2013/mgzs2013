@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       <div className={styles.contactInfo}>
         <div className={styles.contactItem}>
           <Image 
-            src="/Phone.svg" // Replace with your actual phone icon path
+            src="/PhoneEmoji.svg" // Replace with your actual phone icon path
             alt="Phone"
             width={15} // Adjust icon size as needed
             height={15}
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         </div>
         <div className={styles.contactItem}>
           <Image 
-            src="/baseline-email.svg" // Replace with your actual email icon path
+            src="/MailEmoji.svg" // Replace with your actual email icon path
             alt="Email"
             width={15} // Adjust icon size as needed
             height={15}
@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
         </div>
         <div className={styles.contactItem}>
           <Image 
-            src="/location-filled.svg" // Replace with your actual location icon path
+            src="/LocationEmoji.svg" // Replace with your actual location icon path
             alt="Location"
             width={15} // Adjust icon size as needed
             height={15}
