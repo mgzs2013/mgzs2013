@@ -35,6 +35,9 @@ const Contact: React.FC = () => {
           <span>San Francisco, Bay Area</span>
         </div>
       </div>
+      <div className={styles.copyright}>
+        &copy; {new Date().getFullYear()} All rights reserved.
+      </div>
     </section>
   );
 };

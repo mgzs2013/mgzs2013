@@ -36,4 +36,11 @@
   font-size: .8rem; /* Font size for contact info */
 }
 
+.copyright {
+  font-size: 10px;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+
   

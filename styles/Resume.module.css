@@ -18,7 +18,10 @@
 }
 
 .navButton {
-  padding: 10px;
+  display: flex; /* Use flexbox for button layout */
+  align-items: center; /* Center items vertically */
+  line-height: 2.5; /* Increase line-height to move text down */
+  padding: 15px, 17px;
   background-color: white; /* Button color */
   color: #6E6E6E; /* Text color */
   border: none; /* Remove border */
@@ -27,12 +30,20 @@
   margin-bottom: 5px; /* Space between buttons */
   font-family: 'Rockwell', serif; /* Use Rockwell font */
   font-weight: bold; /* Make text bold */
-  font-size: .6rem;
+  font-size: .8rem;
   align-items: flex-start;
 }
 
 .navButton:hover {
   background-color: #005bb5; /* Darker button color on hover */
+}
+.navButton img {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.navButton span {
+
+  margin-top: 5px;
 }
 
 
