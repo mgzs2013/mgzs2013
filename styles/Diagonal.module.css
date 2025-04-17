@@ -1,0 +1,15 @@
+/* Diagonal.module.css */
+.diagonalContainer {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox for centering if needed */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .diagonalImage {
+    width: 100%; /* Make the image take the full width */
+    height: 100%; /* Make the image take the full height */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+  }
