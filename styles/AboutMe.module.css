@@ -8,6 +8,7 @@
   }
   
   .title {
+    margin-top: 10px;
     font-size: 1.7rem; /* Title font size */
     margin-bottom: 20px; /* Space below title */
     font-family: 'Rockwell', serif; /* Use Rockwell font */
