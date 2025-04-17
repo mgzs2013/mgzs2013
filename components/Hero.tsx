@@ -1,5 +1,5 @@
 // components/Hero.tsx
-import Image from 'next/image'; // Import the Image component
+
 import styles from '../styles/Hero.module.css'; // Import styles for the Hero component
 
 

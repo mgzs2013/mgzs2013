@@ -12,7 +12,7 @@
 }
 
 .welcome {
-  margin-top: 40px;
+  margin-top: 5rem;
 }
 
 .welcome h1 {
@@ -28,7 +28,7 @@
   font-family: 'Rockwell', serif; /* Use Rockwell font */
   font-weight: bold; /* Make text bold */
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .toolset {
