@@ -9,17 +9,20 @@ const Hero: React.FC = () => {
       <div className={styles.welcome}>
         <h1>Hello</h1>
         <h1>and welcome!</h1>
-        <h2>It&apos;s me,</h2>
-        <h2>Mario.</h2>
+
 
       </div>
+      <div className={styles.myNameIs}>
+        <h2>It&apos;s me,</h2>
+        <h3>Mario.</h3>
+      </div>
+
 
     </section>
   );
 };
 
 export default Hero;
-
 
 
 

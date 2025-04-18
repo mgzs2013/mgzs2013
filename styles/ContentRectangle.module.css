@@ -3,7 +3,7 @@
   width: 100%; /* Full width of the parent */
   max-width: 345px; /* Set a maximum width */
   height: auto; /* Allow height to adjust based on content */
-  background-color: #6E6E6E; /* Background color */
+  background: linear-gradient(135deg, #6E6E6E, #A1A0A0); /* Example gradient */
   padding: 30px; /* Padding inside the rectangle */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   overflow-y: auto; /* Allow vertical scrolling */
@@ -26,6 +26,13 @@
   border: 1px solid #ccc; /* Optional border */
   min-height: 80px; /* Set a minimum height for small rectangles */
 }
+
+.smallRectangle:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
 .footerText {
   margin-top: 15px;
   display: flex;

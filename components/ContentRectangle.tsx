@@ -3,6 +3,7 @@ import styles from '../styles/ContentRectangle.module.css';
 import Image from 'next/image';
 
 
+
 interface ContentRectangleProps {
   content: string; // Accept content as a prop
   contentType: string; // Type of content to display

@@ -14,6 +14,11 @@
     font-family: 'Rockwell', serif; /* Use Rockwell font */
     font-weight: bold; /* Make text bold */
     color: #6E6E6E;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    background: linear-gradient(90deg, #6E6E6E, #A1A0A0); /* Example gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
   }
   
   .content {
@@ -31,6 +36,7 @@
     font-family: 'Rockwell', serif; /* Use Rockwell font */
     font-weight: bold; /* Make text bold */
     font-size: .8rem;
+    
   }
 
   .imageContainer {
