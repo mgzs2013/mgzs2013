@@ -10,21 +10,24 @@
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack items vertically */
 }
+
 .innerContainer {
-  flex: 1; /* Take remaining space */
   display: flex; /* Use flexbox for inner rectangles */
   flex-direction: column; /* Stack rectangles vertically */
   justify-content: space-between; /* Space them evenly */
 }
+
 .smallRectangle {
   background-color: #e0e0e0; /* Color of the small rectangles */
-  flex: 2; /* Allow rectangles to grow equally */
+  flex: 1; /* Allow rectangles to grow equally */
   margin-bottom: 10px; /* Space between rectangles */
   display: flex; /* Center text inside */
   align-items: center; /* Center text vertically */
   justify-content: center; /* Center text horizontally */
   border: 1px solid #ccc; /* Optional border */
   min-height: 80px; /* Set a minimum height for small rectangles */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Animation for hover effect */
 }
 
 .smallRectangle:hover {
@@ -32,6 +35,45 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
+.projectImage {
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+}
+
+.projectContent {
+  padding: 15px; /* Padding inside the card */
+}
+
+.projectTitle {
+  font-size: 20px; /* Title font size */
+  margin: 0 0 10px; /* Margin below title */
+  color: #333; /* Title color */
+}
+
+.projectDescription {
+  font-size: 16px; /* Description font size */
+  color: #666; /* Description color */
+  margin-bottom: 15px; /* Space below description */
+}
+
+.projectLinks {
+  display: flex; /* Flexbox for links */
+  gap: 10px; /* Space between links */
+}
+
+.projectLink {
+  background-color: #6C7214; /* Button background color */
+  color: #ffffff; /* Button text color */
+  padding: 10px 15px; /* Button padding */
+  border-radius: 5px; /* Rounded button corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.projectLink:hover {
+  background-color: #5A6012; /* Darker shade on hover */
+}
 
 .footerText {
   margin-top: 15px;
@@ -40,19 +82,11 @@
   padding-bottom: 10px;
   font-size: 10px; /* Font size for footer text */
   font-weight: bold;
-  color: white;
-  
-}
-
-.techList {
-  text-align: center;
+  color: white; /* Adjust color as needed */
 }
 
 .githubLink {
-
   margin-left: 5px; /* Space between text and icon */
   display: inline-flex; /* Ensure the link behaves like an inline element */
   align-items: center; /* Center the icon vertically */
 }
-
-  

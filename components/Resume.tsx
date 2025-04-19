@@ -1,7 +1,7 @@
 "use client"
 
 // components/Resume.tsx
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ContentRectangle from './ContentRectangle';
 import styles from '../styles/Resume.module.css';
 import Image from 'next/image';
@@ -12,6 +12,30 @@ const Resume: React.FC = () => {
   const [contentType, setContentType] = useState(''); // State for content type
   const [showSmallRectangles, setShowSmallRectangles] = useState(true); // Control visibility of small rectangles
   const [activeButton, setActiveButton] = useState<string | null>(null); // Track active button
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+        try {
+            const response = await fetch('http://localhost:8080/projects'); // Adjust the URL if necessary
+            const data = await response.json();
+            console.log(data);
+            setProjects(data);
+        } catch (error) {
+            console.error("Error fetching projects:", error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    fetchProjects();
+}, []);
+
+if (loading) {
+    return <div>Loading...</div>; // Show a loading state while fetching data
+}
+
 
   const handleLinkClick = (content: string) => {
     switch (content) {
@@ -63,7 +87,7 @@ const Resume: React.FC = () => {
       </button>
     )}
     </nav>
-    <ContentRectangle content={currentContent} contentType={contentType} showSmallRectangles={showSmallRectangles} /> {/* This remains in the layout */}
+    <ContentRectangle content={currentContent} contentType={contentType} showSmallRectangles={showSmallRectangles} projects={projects}/> {/* This remains in the layout */}
   </section>
 );
 };
