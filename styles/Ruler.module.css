@@ -8,4 +8,27 @@
     padding-right: 30px;
     background-color: white;
   }
+
+  /* Responsive adjustments */
+@media (min-width: 768px) {
+  .graphicContainer {
+      padding-right: 50px; /* Increase right padding for tablets */
+  }
+
+  .graphicContainer img {
+      width: 100px; /* Increase graphic size for tablets */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (min-width: 1024px) {
+  .graphicContainer {
+      padding-right: 70px; /* Increase right padding for desktops */
+  }
+
+  .graphicContainer img {
+      width: 120px; /* Increase graphic size for desktops */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
   
