@@ -47,5 +47,20 @@
   margin-top: 5px;
 }
 
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .navButton {
+      font-size: 1rem; /* Increase font size for tablets */
+      padding: 20px; /* Increase padding for larger buttons */
+  }
+}
+
+@media (min-width: 1024px) {
+  .navButton {
+      font-size: 1.2rem; /* Increase font size for desktops */
+      padding: 25px; /* Increase padding for larger buttons */
+  }
+}
+
 
   

@@ -1,69 +1,188 @@
 /* components/AboutMe.module.css */
 .aboutMe {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 20px; /* Padding around the section */
-    background-color: white;
-  }
-  
+  display: flex;
+  /* Use flexbox for layout */
+  flex-direction: column;
+  /* Stack items vertically */
+  align-items: center;
+  /* Center items horizontally */
+  padding: 20px;
+  /* Padding around the section */
+  background-color: white;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 1.7rem;
+  /* Title font size */
+  margin-bottom: 20px;
+  /* Space below title */
+  font-family: 'Rockwell', serif;
+  /* Use Rockwell font */
+  font-weight: bold;
+  /* Make text bold */
+  color: #6E6E6E;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  /* Soft shadow */
+  background: linear-gradient(90deg, #6E6E6E, #A1A0A0);
+  /* Example gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Makes the text color transparent to show the gradient */
+}
+
+@media (min-width: 768px) {
   .title {
-    margin-top: 10px;
-    font-size: 1.7rem; /* Title font size */
-    margin-bottom: 20px; /* Space below title */
-    font-family: 'Rockwell', serif; /* Use Rockwell font */
-    font-weight: bold; /* Make text bold */
-    color: #6E6E6E;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Soft shadow */
-    background: linear-gradient(90deg, #6E6E6E, #A1A0A0); /* Example gradient */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
+    font-size: 2rem;
+    /* Increase size for tablets */
   }
-  
-  .content {
-    display: flex; /* Use flexbox for content layout */
-    justify-content: space-between; /* Space out text and image */
-    width: 100%; /* Full width */
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+    /* Increase size for desktops */
   }
-  
-  .textContainer {
-    flex: 1; /* Allow text container to grow */
-    margin-right: 20px; /* Space between text and image */
-    color: #6E6E6E;
-    align-items: center;
-    margin-left: -40px;
-    font-family: 'Rockwell', serif; /* Use Rockwell font */
-    font-weight: bold; /* Make text bold */
-    font-size: .8rem;
-    
+}
+
+.content {
+  display: flex;
+  /* Use flexbox for content layout */
+  justify-content: space-between;
+  /* Space out text and image */
+  width: 100%;
+  /* Full width */
+}
+
+.textContainer {
+  flex: 1;
+  /* Allow text container to grow */
+  margin-right: 20px;
+  /* Space between text and image */
+  color: #6E6E6E;
+  align-items: center;
+  margin-left: -40px;
+  font-family: 'Rockwell', serif;
+  /* Use Rockwell font */
+  font-weight: bold;
+  /* Make text bold */
+  font-size: .8rem;
+
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+    /* Adjust title font size for mobile */
   }
 
-  .imageContainer {
-    flex: 1; /* Allow image container to grow */
-    display: flex; /* Use flexbox for image and icons */
-    flex-direction: column; /* Stack image and icons vertically */
-    align-items: flex-start; /* Align items to the left */
-    
+  .textContainer {
+    font-size: 0.9rem;
+    /* Adjust text size for mobile */
   }
-  
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    font-size: 1.8rem;
+    margin-left: -50px;
+    /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .textContainer {
+    font-size: 1.9rem;
+    margin-left: -100px;
+    /* Increase size for desktops */
+  }
+}
+
+
+
+
+
+.imageContainer {
+  flex: 1;
+  /* Allow image container to grow */
+  display: flex;
+  /* Use flexbox for image and icons */
+  flex-direction: column;
+  /* Stack image and icons vertically */
+  align-items: flex-start;
+  /* Align items to the left */
+
+}
+
+.profileImage {
+  border-radius: 15px;
+  /* Rounded corners for the profile image */
+  max-width: 125px;
+  /* Full width of the container */
+  width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 1px;
+  border-color: black;
+  margin-left: 30px;
+}
+
+/* Adjust the size of the profile image for larger screens */
+@media (min-width: 768px) {
   .profileImage {
-    border-radius: 15px; /* Rounded corners for the profile image */
-    max-width: 75px; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 1px;
-    border-color: black;
-    margin-left: 30px;
+    margin-left: 40px;
+    max-width: 200px;
+    /* Increase size for tablets */
   }
-  
-  .socialIcons {
+}
+
+@media (min-width: 1024px) {
+  .profileImage {
+    margin-left: 100px;
+    max-width: 255px;
+    /* Increase size for desktops */
+  }
+}
+
+.socialIcons {
     display: flex; /* Use flexbox for icon layout */
     justify-content: center; /* Center icons horizontally */
     margin-top: 10px; /* Space above icons */
     margin-left: 30px;
-  }
-  
-  .socialIcons a {
+}
+
+/* Default size for icons */
+.socialIcons a {
     margin: 0 3px; /* Space between icons */
+    display: inline-block; /* Ensure icons are treated as blocks for sizing */
+    width: 15px; /* Default size for icons */
+    height: 15px; /* Default size for icons */
+}
+
+/* Adjust the size of social icons for larger screens */
+@media (min-width: 768px) {
+    .socialIcons a {
+        width: 30px; /* Increase icon size for tablets */
+        height: 30px; /* Increase icon size for tablets */
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .socialIcons a {
+      margin-left: 68px;
+        width: 45px; /* Increase icon size for desktops */
+        height: 45px; /* Increase icon size for desktops */
+    }
+}
+
+
+/* Add Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .aboutMe {
+    padding: 10px;
+    /* Adjust padding for smaller screens */
   }
-  
+}
+

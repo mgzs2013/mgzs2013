@@ -11,8 +11,8 @@ const AboutMe: React.FC = () => {
           <Image
             src="/ProfilePlaceholder.png" // Replace with your actual photo path
             alt="Your Name"
-            width={100} // Adjust width as needed
-            height={100} // Adjust height as needed
+            width={150} // Adjust width as needed
+            height={150} // Adjust height as needed
             className={styles.profileImage}
           />
           <div className={styles.socialIcons}>
@@ -20,24 +20,24 @@ const AboutMe: React.FC = () => {
               <Image
                 src="/github-line.svg" // Replace with actual GitHub icon path
                 alt="GitHub"
-                width={10} // Adjust icon size as needed
-                height={10}
+                width={24} // Adjust icon size as needed
+                height={24}
               />
             </a>
             <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/linkedin.svg" // Replace with actual LinkedIn icon path
                 alt="LinkedIn"
-                width={10}
-                height={10}
+                width={24}
+                height={24}
               />
             </a>
             <a href="https://twitter.com/mgzs2013" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/twitter-x-fill.svg" // Replace with actual Twitter icon path
                 alt="Twitter"
-                width={10}
-                height={10}
+                width={24}
+                height={24}
               />
             </a>
           </div>

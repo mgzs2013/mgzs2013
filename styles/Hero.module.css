@@ -17,8 +17,10 @@
 }
 
 
+/* Example CSS for responsive headings */
+
 .welcome h1 {
-  font-size: 1.9rem; /* Adjust font size */
+  font-size: 1.9rem; /* Default font size */
   font-family: 'Rockwell', serif; /* Use Rockwell font */
   font-weight: bold; /* Make text bold */
   margin-top: 0;
@@ -26,35 +28,58 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 255, 0, 0.7); /* Green glow effect */
 }
 
-.welcome h2 {
-  font-size: 2.2rem; /* Adjust font size */
-  font-family: 'Rockwell', serif; /* Use Rockwell font */
-  font-weight: bold; /* Make text bold */
-  margin-top: 0;
-  margin-bottom: 17px;
+/* Responsive adjustments for h1 */
+@media (min-width: 768px) {
+  .welcome h1 {
+    font-size: 2.5rem; /* Increase font size for tablets */
+  }
 }
 
-.toolset {
-  margin-top: 10px; /* Adjust this value to control space above the toolset */
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center the toolset horizontally */
-  width: 100%; /* Full width to allow centering */
- 
+@media (min-width: 1024px) {
+  .welcome h1 {
+    font-size: 3rem; /* Increase font size for desktops */
+  }
 }
 
 .myNameIs h2 {
-  font-size: 2.2rem; /* Adjust font size */
+  font-size: 2.2rem; /* Default font size */
   font-family: 'Rockwell', serif; /* Use Rockwell font */
   font-weight: bold; /* Make text bold */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 255, 0, 0.7); /* Green glow effect */
+}
 
+/* Responsive adjustments for h2 */
+@media (min-width: 768px) {
+  .myNameIs h2 {
+    font-size: 2.8rem; /* Increase font size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .myNameIs h2 {
+    font-size: 3.5rem; /* Increase font size for desktops */
+  }
 }
 
 .myNameIs h3 {
-  font-size: 2.2rem; /* Adjust font size */
+  font-size: 2.2rem; /* Default font size */
   font-family: 'Rockwell', serif; /* Use Rockwell font */
   font-weight: bold; /* Make text bold */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 255, 0, 0.7); /* Green glow effect */
-
 }
+
+/* Responsive adjustments for h3 */
+@media (min-width: 768px) {
+  .myNameIs h3 {
+    font-size: 2.8rem; /* Increase font size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .myNameIs h3 {
+    font-size: 3.5rem; /* Increase font size for desktops */
+  }
+}
+
+
 
