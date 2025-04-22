@@ -12,6 +12,20 @@
  
 }
 
+@media (min-width: 768px) {
+  .hero {
+    height: 60vh; /* Full viewport height */
+    /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 67vh; /* Full viewport height */
+    /* Increase size for desktops */
+  }
+}
+
 .welcome {
   margin-top: 5rem;
 }

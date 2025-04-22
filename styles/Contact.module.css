@@ -26,10 +26,42 @@
   width: 100%; /* Ensure it takes full width */
 }
 
+@media (min-width: 768px) {
+  .contactInfo {
+    margin-left: 20px;
+   
+    /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactInfo {
+   margin-top: 50px;
+   
+    /* Increase size for desktops */
+  }
+}
+
 .contactItem {
   display: flex; /* Use flexbox for icon and text */
   align-items: center; /* Center items vertically */
   margin-bottom: 15px; /* Space between items */
+}
+
+@media (min-width: 768px) {
+  .contactItem {
+    margin-left: 40px;
+   
+    /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactItem {
+   margin-bottom: 20px;
+   
+    /* Increase size for desktops */
+  }
 }
 
 .contactItem span {
@@ -42,6 +74,23 @@
   align-items: center;
   margin-left: 150px;
   margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-left: 280px;
+   
+    /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .copyright {
+    margin-top: 110px;
+    margin-left: 420px;
+   
+    /* Increase size for desktops */
+  }
 }
 
 .contactLink {

@@ -16,6 +16,22 @@
 
 }
 
+@media (min-width: 768px) {
+  .header {
+    padding: 50px 15px; /* Padding around the header */
+    /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 50px 15px; /* Padding around the header */
+    /* Increase size for desktops */
+  }
+}
+
+
+
 .hamburgerIcon {
   cursor: pointer; /* Change cursor on hover */
   transition: transform 0.3s ease; /* Smooth transition for icon */
