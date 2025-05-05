@@ -25,7 +25,7 @@ const ContentRectangle: React.FC<ContentRectangleProps> = ({
   projects,
 }) => {
   console.log("These are the db projects:", projects); 
-
+  console.log("Show Small Rectangles:", showSmallRectangles);
 
   return (
     
