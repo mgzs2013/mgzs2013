@@ -12,37 +12,47 @@
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .contact {
-    min-height: 35vh; /* Increase minimum height for tablets */
+    min-height: 30vh; /* Increase minimum height for tablets */
     padding: 30px; /* Increase padding for larger devices */
   }
 }
 
 @media (min-width: 1024px) {
   .contact {
-    min-height: 35vh; /* Increase minimum height for larger devices */
+    min-height: 30vh; /* Increase minimum height for larger devices */
     padding: 40px; /* Further increase padding for larger devices */
   }
 }
 
 @media (min-width: 1280px) {
   .contact {
-    min-height: 60vh; /* Increase minimum height for small desktops */
+    min-height: 50vh; /* Increase minimum height for small desktops */
     padding: 50px; /* Further increase padding for larger desktops */
   }
 }
 
 @media (min-width: 1440px) {
   .contact {
-    min-height: 60vh; /* Increase minimum height for standard desktops */
+    min-height: 50vh; /* Increase minimum height for standard desktops */
     padding: 60px; /* Increase padding for larger desktops */
   }
 }
 
 @media (min-width: 1920px) {
   .contact {
-    min-height: 60vh; /* Increase minimum height for large desktops */
+    min-height: 50vh; /* Increase minimum height for large desktops */
     padding: 70px; /* Increase padding for large desktops */
   }
+}
+
+/* Centering the contactInfo */
+.contactInfo {
+  display: flex; /* Use flexbox for item layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Keep items aligned to the left */
+  width: 100%; /* Ensure it takes full width */
+  flex-grow: 1; /* Allow contactInfo to take up available space */
+  justify-content: center; /* Center the content vertically within its container */
 }
 
 
@@ -141,56 +151,11 @@
 
 .copyright {
   font-size: 10px;
-  align-items: center;
+  text-align: center;
   margin-top: 15vw;
-  margin-left: 40vw;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .copyright {
-    margin-top: 15vw;
-    margin-left: 40vw;
-
-    /* Increase size for tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  .copyright {
-    margin-top: 15vw;
-    margin-left: 40vw;
-
-    /* Increase size for desktops */
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1279px) {
-  .copyright {
-margin-left: 420px;
-  }
-}
-
-/* Small Desktop */
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .copyright {
-margin-left: 550px;
-  }
-}
-
-/* Standard Desktop */
-@media (min-width: 1440px) and (max-width: 1919px) {
-  .copyright {
-    margin-left: 700px;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1920px) {
-  .copyright {
-    margin-top: 200px;
-    margin-left: 860px;
-  }
-}
 
 .contactLink {
   color: inherit;
