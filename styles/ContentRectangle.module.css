@@ -91,6 +91,8 @@
   align-items: center; /* Center the icon vertically */
 }
 
+
+
 /* Responsive adjustments */
 @media (min-width: 767px) {
   .rectangle {
@@ -104,6 +106,21 @@
 
   .projectDescription {
     font-size: 14px; /* Increase description font size for tablets */
+  }
+}
+
+@media (min-width: 390px) {
+  .rectangle {
+    max-width: 100%; /* Increase max width for desktops */
+    padding: 10px; /* Increase padding for larger rectangles */
+  }
+
+  .projectTitle {
+    font-size: 08px; /* Increase title font size for desktops */
+  }
+
+  .projectDescription {
+    font-size: 10px; /* Increase description font size for desktops */
   }
 }
 
@@ -121,4 +138,20 @@
     font-size: 20px; /* Increase description font size for desktops */
   }
 }
+
+@media (min-width: 1280px) {
+  .rectangle {
+    max-width: 100%; /* Increase max width for desktops */
+    padding: 55px; /* Increase padding for larger rectangles */
+  }
+
+  .projectTitle {
+    font-size: 28px; /* Increase title font size for desktops */
+  }
+
+  .projectDescription {
+    font-size: 20px; /* Increase description font size for desktops */
+  }
+}
+
 
