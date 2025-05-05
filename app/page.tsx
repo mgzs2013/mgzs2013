@@ -14,9 +14,13 @@ const Home: React.FC = () => {
       <Hero />
       
       <AboutMe/>
+      <section id='resume'>
       <Resume />
+      </section>
       <Ruler/>
+      <section id='contact'>
       <Contact />
+      </section>
     </div>
   );
 };
