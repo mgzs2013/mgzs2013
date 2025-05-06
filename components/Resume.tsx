@@ -20,7 +20,7 @@ const Resume: React.FC = () => {
         try {
             const response = await fetch('https://mgzs2013.vercel.app/projects'); // Adjust the URL if necessary
             const data = await response.json();
-            console.log(data);
+            console.log("This is the data:",  data);
             setProjects(data);
         } catch (error) {
             console.error("Error fetching projects:", error);
