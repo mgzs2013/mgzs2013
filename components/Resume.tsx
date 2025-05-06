@@ -18,7 +18,7 @@ const Resume: React.FC = () => {
   useEffect(() => {
     const fetchProjects = async () => {
         try {
-            const response = await fetch('https://mgzs2013.vercel.app/projects'); // Adjust the URL if necessary
+            const response = await fetch('http:localhost:8080/projects'); // Adjust the URL if necessary
             const data = await response.json();
             console.log("This is the data:",  data);
             setProjects(data);
