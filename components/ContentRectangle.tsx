@@ -42,7 +42,7 @@ const ContentRectangle: React.FC<ContentRectangleProps> = ({
                 <p className={styles.projectDescription}>{Project.Description}</p>
                 <div className={styles.projectLinks}>
                   <a href={Project.LiveDemoUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                  <a href={Project.GithubUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+                 
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ const ContentRectangle: React.FC<ContentRectangleProps> = ({
         </div>
       )}
       <div className={styles.footerText}>
-        Check them all out:
+        Check out all my work:
         <a
           href="https://github.com/mgzs2013" // Replace with your actual GitHub profile link
           target="_blank"
