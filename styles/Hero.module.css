@@ -12,6 +12,14 @@
  
 }
 
+
+@media (min-width: 390px) {
+  .hero {
+    height: 50vh; /* Full viewport height */
+    /* Increase size for tablets */
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     height: 60vh; /* Full viewport height */
