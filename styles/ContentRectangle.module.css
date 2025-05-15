@@ -36,7 +36,7 @@
 }
 
 .projectImage {
-  width: 100%; /* Full width image */
+  width: 20%; /* Full width image */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px 8px 0 0; /* Rounded corners for the top */
 }

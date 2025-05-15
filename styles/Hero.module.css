@@ -28,7 +28,7 @@
 
 @media (min-width: 1281px) {
   .hero {
-    height: 67vh; /* Full viewport height */
+    height: 75vh; /* Full viewport height */
     /* Increase size for desktops */
   }
 }

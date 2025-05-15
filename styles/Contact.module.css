@@ -2,8 +2,8 @@
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack items vertically */
   align-items: flex-start; /* Align items to the left */
-  padding: 20px; /* Padding around the section */
-  min-height: 30vh; /* Minimum height for the component */
+ padding: 40px 20px; /* Increase top padding to move content down */
+  min-height: 20vh; /* Reduced minimum height for the component */
   background-color: #6C7214; /* Background color */
   color: white; /* Ensure text is readable against the background */
   transition: min-height 0.3s ease; /* Smooth transition for height changes */
@@ -12,36 +12,36 @@
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .contact {
-    min-height: 30vh; /* Increase minimum height for tablets */
-    padding: 30px; /* Increase padding for larger devices */
+    min-height: 25vh; /* Increase minimum height for tablets */
+    padding: 25px; /* Adjust padding for larger devices */
   }
 }
 
 @media (min-width: 1024px) {
   .contact {
-    min-height: 30vh; /* Increase minimum height for larger devices */
-    padding: 40px; /* Further increase padding for larger devices */
+    min-height: 30vh; /* Adjust minimum height for larger devices */
+    padding: 30px; /* Adjust padding for larger devices */
   }
 }
 
 @media (min-width: 1280px) {
   .contact {
-    min-height: 50vh; /* Increase minimum height for small desktops */
-    padding: 50px; /* Further increase padding for larger desktops */
+    min-height: 40vh; /* Increase minimum height for small desktops */
+    padding: 40px; /* Further increase padding for larger desktops */
   }
 }
 
 @media (min-width: 1440px) {
   .contact {
-    min-height: 50vh; /* Increase minimum height for standard desktops */
-    padding: 60px; /* Increase padding for larger desktops */
+    min-height: 40vh; /* Maintain minimum height for standard desktops */
+    padding: 50px; /* Further increase padding for larger desktops */
   }
 }
 
 @media (min-width: 1920px) {
   .contact {
-    min-height: 50vh; /* Increase minimum height for large desktops */
-    padding: 70px; /* Increase padding for large desktops */
+    min-height: 45vh; /* Adjust minimum height for large desktops */
+    padding: 60px; /* Increase padding for large desktops */
   }
 }
 
@@ -53,118 +53,71 @@
   width: 100%; /* Ensure it takes full width */
   flex-grow: 1; /* Allow contactInfo to take up available space */
   justify-content: center; /* Center the content vertically within its container */
+  margin-top: 20px; /* Add margin to move contact items down */
 }
 
-
-
+/* Heading styles */
 .contact h2 {
-  font-size: 1.8rem;
-  /* Title font size */
-  margin: 0;
-  /* Remove margin */
-  margin-bottom: 10%;
-  /* Space below title */
-  font-family: 'Rockwell', serif;
-  /* Use Rockwell font */
-  font-weight: bold;
-  /* Make text bold */
-  text-align: center;
-  /* Center the text */
-  width: 100%;
-  /* Optional: make the width 100% to ensure centering */
-
+  font-size: 1.8rem; /* Title font size */
+  margin: 0; /* Remove margin */
+  margin-bottom: 10px; /* Space below title */
+  font-family: 'Rockwell', serif; /* Use Rockwell font */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center the text */
+  width: 100%; /* Optional: make the width 100% to ensure centering */
 }
 
 @media (min-width: 768px) {
   .contact h2 {
-    font-size: 2rem;
-    /* Increase size for tablets */
+    font-size: 2rem; /* Increase size for tablets */
   }
 }
 
 @media (min-width: 1024px) {
   .contact h2 {
-    font-size: 2.2rem;
-
-    /* Increase size for desktops */
+    font-size: 2.2rem; /* Increase size for desktops */
   }
 }
 
-.contactInfo {
-  display: flex;
-  /* Use flexbox for item layout */
-  flex-direction: column;
-  /* Stack items vertically */
-  align-items: flex-start;
-  /* Keep items aligned to the left */
-  width: 100%;
-  /* Ensure it takes full width */
-}
-
-@media (min-width: 768px) {
-  .contactInfo {
-    margin-left: 20px;
-
-    /* Increase size for tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  .contactInfo {
-    margin-top: 50px;
-
-    /* Increase size for desktops */
-  }
-}
-
+/* Contact item styles */
 .contactItem {
-  display: flex;
-  /* Use flexbox for icon and text */
-  align-items: center;
-  /* Center items vertically */
-  margin-bottom: 15px;
-  /* Space between items */
-}
-
-@media (min-width: 768px) {
-  .contactItem span {
-    font-size: 1rem;
-
-    /* Increase size for tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  .contactItem span {
-    font-size: 1rem;
-
-    /* Increase size for desktops */
-  }
+  display: flex; /* Use flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 15px; /* Space between items */
+  margin-top: 10px; /* Add margin-top to move each item down */
 }
 
 .contactItem span {
-  margin-left: 10px;
-  /* Space between icon and text */
-  font-size: .8rem;
-  /* Font size for contact info */
+  margin-left: 10px; /* Space between icon and text */
+  font-size: .8rem; /* Font size for contact info */
 }
 
+@media (min-width: 768px) {
+  .contactItem span {
+    font-size: 1rem; /* Increase size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactItem span {
+    font-size: 1rem; /* Maintain size for desktops */
+  }
+}
+
+/* Copyright styles */
 .copyright {
-  font-size: 10px;
-  text-align: center;
-  margin-top: 15vw;
-  width: 100%;
+  font-size: 10px; /* Font size for footer text */
+  text-align: center; /* Center text */
+  margin-top: 15vw; /* Space above */
+  width: 100%; /* Full width */
 }
 
-
+/* Contact link styles */
 .contactLink {
-  color: inherit;
-  /* Use the inherited text color */
-  text-decoration: none;
-  /* Remove underline */
+  color: inherit; /* Use the inherited text color */
+  text-decoration: none; /* Remove underline */
 }
 
 .contactLink:hover {
-  text-decoration: underline;
-  /* Underline on hover for better visibility */
+  text-decoration: underline; /* Underline on hover for better visibility */
 }
