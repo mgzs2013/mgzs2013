@@ -11,8 +11,9 @@ const Home: React.FC = () => {
   return (
     <div>
       <Header />
+      <section id="hero">
       <Hero />
-      
+      </section>
       <AboutMe/>
       <section id='resume'>
       <Resume />

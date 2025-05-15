@@ -1,6 +1,6 @@
 /* components/ContentRectangle.module.css */
 .rectangle {
-  width: 100%; /* Full width of the parent */
+  width: 75%; /* Full width of the parent */
   max-width: 345px; /* Set a maximum width */
   height: auto; /* Allow height to adjust based on content */
   background: linear-gradient(135deg, #6E6E6E, #A1A0A0); /* Example gradient */
