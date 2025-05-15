@@ -71,6 +71,19 @@
 
 }
 
+@media (max-width: 390px) {
+  .title {
+    font-size: 1.5rem;
+    /* Adjust title font size for mobile */
+  }
+
+  .textContainer {
+    font-size: 0.9rem;
+    margin-left: 5%;
+    /* Adjust text size for mobile */
+  }
+}
+
 @media (max-width: 480px) {
   .title {
     font-size: 1.5rem;
@@ -79,6 +92,7 @@
 
   .textContainer {
     font-size: 0.9rem;
+   
     /* Adjust text size for mobile */
   }
 }
