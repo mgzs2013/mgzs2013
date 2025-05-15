@@ -52,7 +52,7 @@ if (loading) {
         setActiveButton('Details about Job 2'); // Set active button
         break;
       case 'Details about Education':
-        setCurrentContent('I graduated from XYZ University with a degree in Computer Science.'); // Example content
+        setCurrentContent('I graduated from a college that equipped me with more than just the skills needed to work in tech. There was a strong emphasis on human development in all areas. I carry with me leadership abilities and a passion for helping individuals become their strongest, most equipped, and most professional selves. I would love the opportunity to have a conversation with you about how I can contribute to your team.'); // Example content
         setContentType('paragraph'); // Set content type to paragraph
         setShowSmallRectangles(false); // Do not show small rectangles for Education
         setActiveButton('Details about Education'); // Set active button

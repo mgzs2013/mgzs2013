@@ -44,8 +44,7 @@ const AboutMe: React.FC = () => {
         </div>
         <div className={styles.textContainer}>
           <p>
-            I am a passionate Full-Stack Engineer with experience in building dynamic and responsive web applications.
-            
+            I am a passionate developer of software and people with experience in building dynamic and responsive web applications.  
           </p>
         </div>
       </div>
