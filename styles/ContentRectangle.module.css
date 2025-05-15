@@ -96,23 +96,6 @@
 }
 
 
-
-/* Responsive adjustments */
-@media (min-width: 767px) {
-  .rectangle {
-    max-width: 100%; /* Increase max width for tablets */
-    padding: 20px; /* Increase padding for larger rectangles */
-  }
-
-  .projectTitle {
-    font-size: 18px; /* Increase title font size for tablets */
-  }
-
-  .projectDescription {
-    font-size: 14px; /* Increase description font size for tablets */
-  }
-}
-
 @media (min-width: 390px) {
   .rectangle {
     max-width: 100%; /* Increase max width for desktops */
@@ -125,6 +108,10 @@
 
   .projectDescription {
     font-size: 10px; /* Increase description font size for desktops */
+  }
+
+  .projectImage {
+    margin-right: 0;
   }
 }
 
@@ -141,6 +128,10 @@
 
   .projectDescription {
     font-size: 14px; /* Increase description font size for tablets */
+  }
+
+  .projectImage {
+    margin-right: 0;
   }
 }
 
