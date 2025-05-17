@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
                 height={24}
               />
             </a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="www.linkedin.com/in/m-j-gonzales" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/linkedin.svg" // Replace with actual LinkedIn icon path
                 alt="LinkedIn"
