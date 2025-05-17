@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <Image
-            src="/ProfilePlaceholder.png" // Replace with your actual photo path
+            src="/profileHeadshot.png" // Replace with your actual photo path
             alt="Your Name"
             width={150} // Adjust width as needed
             height={150} // Adjust height as needed
